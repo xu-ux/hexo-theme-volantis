@@ -63,5 +63,8 @@
     <!-- Custom Files footer begin-->
     <%- volantis_inject('footer') %>
     <!-- Custom Files footer end-->
+    <% if (config.debug.enable) { %>
+      <%- partial('debug.ejs') %>
+    <% } %>
   </footer>
 <% } %>

@@ -107,6 +107,7 @@
       <% if (showReadmore) { %>
         <div>
           <a class='readmore' href='<%- url_for(post.link || post.path) %>' itemprop="url">
+            <i class='fa-duotone fa-book-open-cover'></i>
             <%- post.link ? __('post.readoriginal') : __('post.readmore') %>
           </a>
         </div>
